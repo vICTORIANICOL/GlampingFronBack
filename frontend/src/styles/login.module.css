@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Zen+Loop&display=swap');
+
+.loginContainer {
+  max-width: 400px;
+  margin-left: 595px;
+  padding: 2rem;
+  width: 390px;
+  height: 400px;
+  background-color: #33626C;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+}
+
+.loginContainer h2 {
+  font-family: 'Zen Loop', cursive;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #829B97;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Nanum Gothic';
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 30px 0 30px 0;
+  border: none;
+  background-color: #829B97;
+  color: white;
+  font-family: 'Zen Loop';
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2A4F57;
+}
+
+.error {
+  color: #ffb3b3;
+  margin-top: 1rem;
+}

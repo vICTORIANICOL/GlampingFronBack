@@ -1,0 +1,26 @@
+.ptag {
+  font-family: "Zen Loop", cursive;
+  font-size: 46px;
+  font-weight: 500;
+  color: #33626c;
+  margin: 100px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container > * + * {
+  display: flex;
+  flex-direction: column;
+  gap: 100px; /* space between cards */
+}
+
+.favoriteList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* <-- controls vertical space between cards */
+  list-style: none; /* remove default list bullets if needed */
+  padding: 0; /* remove default padding */
+  margin: 0; /* optional */
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Zen+Loop&display=swap');
+
+.section {
+  padding: 2rem 0;
+  background-color: #f3f3f3; /* eller transparent hvis du vil */
+  text-align: center;
+  width: 390px;
+}
+
+.badge {
+  background-color: #C5B496;
+  border-radius: 60px 0 60px 0;
+  width: 80%;
+  max-width: 300px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem 1rem;
+}
+
+.heading {
+  font-family: 'Zen Loop', cursive;
+  font-size: 3rem;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+  text-align: center;
+}

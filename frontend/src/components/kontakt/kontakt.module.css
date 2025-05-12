@@ -1,0 +1,73 @@
+.kontakt {
+    background-color: #33626C;
+    border-radius: 50px 0px 0px 0px;
+    width: 390px;
+    padding: 3rem 1.5rem 4rem;
+    text-align: center;
+
+
+    position: relative;
+    z-index: 2;
+    margin-top: -45px;
+    margin-bottom: -1px;
+  }
+  
+  .title {
+    font-family: 'Zen Loop';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  
+  .description {
+    font-family: 'Nanum Gothic';
+    font-size: 14px;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: 'Nanum Gothic';
+    font-size: 14px;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #ccc;
+  }
+  
+  textarea {
+    height: 130px;
+    resize: none;
+  }
+  
+  .btn {
+    font-family: 'Zen Loop', sans-serif;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border: 1px solid #829B97;
+    border-radius: 30px 0px 30px 0px;
+    background-color: #829B97;
+    color: white;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  
+  .sent {
+    text-align: center;
+    font-family: 'Zen Loop';
+    font-size: 1.6rem;
+    color: white;
+    padding: 4rem 1rem;
+  }
+  

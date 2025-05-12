@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "cf2d2dc5-2fc5-43d3-98ea-11954fa2dbb7",
+		"name": "Glamping server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44344039",
+		"_collection_link": "https://the-boys-1357.postman.co/workspace/55271129-1a80-42bc-888f-cdf136b8f072/collection/44344039-cf2d2dc5-2fc5-43d3-98ea-11954fa2dbb7?action=share&source=collection_link&creator=44344039"
+	},
+	"item": [
+		{
+			"name": "Stays",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Luksus Telt ved Søen\",\r\n  \"description\": \"Et hyggeligt glamping-ophold med udsigt til vandet\",\r\n  \"numberOfPersons\": 2,\r\n  \"price\": 1499,\r\n  \"includes\": [\"morgenmad\", \"jacuzzi\", \"hængekøje\"]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/stays",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"stays"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": \"6811f7d73468cbd24f0f7e33\",\r\n  \"title\": \"Hey\",\r\n  \"description\": \"Nu med luksusliggeunderlag og kaffe\",\r\n  \"numberOfPersons\": 2,\r\n  \"image\": \"https://example.com/test.jpg\",\r\n  \"price\": 650,\r\n  \"includes\": [\"sovepose\", \"kaffe\"]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/stays",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"stays"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/stays",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"stays"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"review\": \"Godt ophold\",\r\n    \"age\": 30,\r\n    \"name\": \"Oliver Bo\",\r\n    \"Image\": \"#\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/reviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Activity",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Bål og Skumfiduser\",\r\n  \"description\": \"Hyggeaften med bål, skumfiduser og historier fra Vestkysten\",\r\n  \"weekday\": \"Fredage\",\r\n  \"image\": \"https://placekitten.com/400/300\",\r\n  \"time\": \"20:00\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/activities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"activities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Bål og Skumfiduser\",\r\n    \"description\": \"Hyggeaften med bål, skumfiduser og historier fra Vestkysten\",\r\n    \"weekday\": \"Fredage,Lørdage\",\r\n    \"image\": \"https://placekitten.com/400/300\",\r\n    \"time\": \"20:00\",\r\n    \"_id\": \"681326cbbe478e97fb3317d3\",\r\n    \"__v\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/activities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"activities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Mathias Devboss\",\r\n  \"email\": \"mathias@example.com\",\r\n  \"image\": \"https://placekitten.com/100/100\",\r\n  \"hashedPassword\": \"superSecureHash123\",\r\n  \"role\": \"admin\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mathias Dev-boss\",\r\n    \"email\": \"mathias@example.com\",\r\n    \"image\": \"https://placekitten.com/100/100\",\r\n    \"hashedPassword\": \"superSecureHash123\",\r\n    \"role\": \"admin\",\r\n    \"_id\": \"6813325627c8be4e1079d0c9\",\r\n    \"__v\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/users/6813325627c8be4e1079d0c9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"users",
+								"6813325627c8be4e1079d0c9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/users/6813343327c8be4e1079d0d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"users",
+								"6813343327c8be4e1079d0d2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/users/6813343327c8be4e1079d0d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"users",
+								"6813343327c8be4e1079d0d2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

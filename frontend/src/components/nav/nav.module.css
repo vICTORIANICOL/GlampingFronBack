@@ -1,0 +1,107 @@
+.burgerbackground {
+  background-color: #829b97;
+  width: 64px;
+  height: 52px;
+  position: fixed;
+  display: flex;
+  top: 0.6rem;
+  right: 0.5rem;
+  z-index: 11;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.burger {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 11;
+  transition: transform 0.3s ease;
+}
+
+.burger div {
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animation når den er åben */
+.burger.open div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #829b97;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Zen Loop", cursive;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.nav li {
+  margin: 1.2rem 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.nav a:hover {
+  opacity: 0.8;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

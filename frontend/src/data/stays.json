@@ -1,0 +1,55 @@
+{
+  "stays": [
+    {
+      "title": "Weekendtur",
+      "description": "Trænger du og én du holder af til en velfortjent pause fra hverdagens travlhed? Vores weekendglampingophold er den perfekte måde at forynge krop og sind på, mens I nyder det bedste fra både naturen og luksuriøs indkvartering. Vi tilbyder den perfekte kombination af udendørs eventyr og bekvemmeligheder. Du vil bo i rummelige og smukt indrettede telte, udstyret med komfortable senge og alle nødvendige faciliteter. Omgivet af den storslåede natur vil du føle dig i ét med omgivelserne, samtidig med at du nyder komforten ved hjemmet.",
+      "numberOfPersons": "2",
+      "price": 4200,
+      "includes": [
+        "Morgenmad",
+        "Frokost",
+        "Aftensmad",
+        "Adgang til cykler",
+        "2 Kanobilletter",
+        "Optændingsbrikker til bål",
+        "Snobrødsdej",
+        "Godteposer til børnene"
+      ],
+      "image": ""
+    },
+    {
+      "title": "Romantisk Getaway",
+      "description": "Drømmer du om at tilbringe kvalitetstid med din elskede i et idyllisk, naturskønt miljø, langt væk fra hverdagens travlhed? Vores romantiske glampingophold er den perfekte mulighed for jer to at fordybe jer i hinandens selskab og skabe uforglemmelige minder i en luksuriøs campingoplevelse som ingen anden. Uanset om I ønsker at genoplive jeres forhold eller fejre en særlig lejlighed, er vores glampingoplevelse den perfekte ramme for at gøre det. Book jeres romantiske glampingophold i dag og skab minder, der vil vare livet ud.",
+      "numberOfPersons": "2",
+      "price": 3500,
+      "includes": [
+        "Morgenmad",
+        "Frokost",
+        "Aftensmad",
+        "Adgang til cykler",
+        "1 Kanobillet",
+        "Optændingsbrikker til bål",
+        "Snobrødsdej",
+        "1 flaske valgfri vin"
+      ],
+      "image": ""
+    },
+    {
+      "title": "Familiepakken",
+      "description": "Drømmer du om en uforglemmelig ferie, hvor du kan fordybe dig i naturen og skabe dyrebare minder sammen med din familie? Vores familievenlige glampingophold er den ideelle mulighed for at trække stikket og opleve spændende eventyr, mens I nyder luksus og komfort midt i naturen. Vi tilbyder en bred vifte af aktiviteter, der passer til alle aldre. Lad børnene udforske naturen på guidede ture, tag på cykelture i det omkringliggende landskab eller nyd en familiepicnic ved en malerisk sø. Vi har også børnevenlige underholdningsmuligheder, herunder spil og legeområder, der sørger for, at ingen keder sig.",
+      "numberOfPersons": "3-6",
+      "price": 6100,
+      "includes": [
+        "Morgenmad",
+        "Frokost",
+        "Aftensmad",
+        "Adgang til cykler",
+        "2 Kanobilletter",
+        "Optændingsbrikker til bål",
+        "Snobrødsdej",
+        "Godteposer til børnene"
+      ],
+      "image": ""
+    }
+  ]
+}

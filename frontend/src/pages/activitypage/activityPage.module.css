@@ -1,0 +1,16 @@
+/* Basic layout for the ActivityPage */
+.activityPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0; /* You can customize the background color */
+}
+
+.activityCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px; /* Adjust to your layout */
+  gap: 20px; /* Space between cards */
+  padding: 0 10px;
+}

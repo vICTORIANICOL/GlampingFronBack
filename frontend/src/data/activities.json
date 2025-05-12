@@ -1,0 +1,39 @@
+{
+  "activities": [
+    {
+      "title": "Fællesbål",
+      "description": "Vi har skabt den perfekte atmosfære for en hyggelig aften med god musik, historiefortælling og fællesskab omkring bålet. Del historier, rist skumfiduser, syng sange og skab minder. Vi glæder os til at se dig til vores altid hyggelige fællesarrangement hos Gittes glamping",
+      "image": "",
+      "date": "Fredage og lørdage",
+      "time": "15.00-17.00"
+    },
+    {
+      "title": "Kanotur",
+      "description": "I vores baghave finder I gudenåen, hvor vi tilbyder kanoudlejning for de sejlglade typer. Uanset om du er nybegynder eller erfaren kanoentusiast, er denne tur perfekt til dig, da vi har erfarende guider, som står til rådighed, hvis udstyret eller teknikken driller. På den måde har alle mulighed for at komme godt fra start. Kanoerne kan lejes hele dagen, og uden booking.",
+      "image": "",
+      "weekday": "Alle dage",
+      "time": "8.00 - 20.00"
+    },
+    {
+      "title": "Naturvandring",
+      "description": "Dyk ned i naturens skatkiste med vores guidede naturvandring i det fortryllede Dollerup Bakker. Vores erfarne naturguider vil tage dig med på en spændende rejse gennem dette naturskønne område, hvor du vil opdage smuk dansk natur, med højdepunkter som: smukke udsigter, rigt dyreliv, mange tusind år gammel historie, og vidunderlige fotomuligheder.",
+      "image": "",
+      "date": "Lørdage",
+      "time": "13.00 - 14.30"
+    },
+    {
+      "title": "Yoga i det fri",
+      "description": "Vågn op med naturens skønhed omkring dig, mens vores yogainstruktør Hanne guider dig gennem en afslappende og opkvikkende yogaseance.For at deltage i vores morgenyogatime, skal du tilmelde dig i forvejen ved at kontakte vores reception. Oplev den fredelige forbindelse mellem krop og natur i en afslappet og luksuriøs atmosfære.",
+      "image": "",
+      "date": "Alle dage",
+      "time": "7.30 - 8.30"
+    },
+    {
+      "title": "Vinsmagning",
+      "description": "Vores nabogård, Birkelundgård, byder dig velkommen til en eksklusiv vinsmagning i hjertet af Danmark. Deres vingård producerer egne vine i en unik lokal terroir, der skaber enestående smagsoplevelser. Deres kompetente værter vil guide dig igennem en uforglemmelig smagning af egne danske vine. Oplev det danske landskab og kultur gennem deres vin, og del denne unikke oplevelse med andre vinelskere. Vi glæder os til at byde dig velkommen og introducere dig til vidunderlige vine fra Birkelundgård.",
+      "image": "",
+      "date": "Lørdage",
+      "time": "15.00 - 17.00"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+/* @import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+/* footer.module.css */
+
+/* .footerContainer {
+  background-color: #ced3cd;
+} */
+.footer {
+  background-color: #2a4f57;
+  width: 390px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 21px;
+}
+
+.socialIcons {
+  width: 72px;
+  height: 73px;
+  background-color: #ffffff;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logoTextContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.logo {
+  width: 50px;
+  height: 51px;
+}
+
+.brandName {
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Zen Loop", sans-serif;
+  margin: 0;
+}

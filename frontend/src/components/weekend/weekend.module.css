@@ -1,0 +1,73 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Zen+Loop&display=swap');
+
+.sec2 {
+  background-color: #33626C;
+  border-radius: 30px 0px 0px 0px;
+  width: 390px;
+  height: 1010px;
+  padding: 4rem 1.5rem 2rem;  
+  margin: 2rem auto;
+  text-align: center;
+  position: relative;
+
+  z-index: 2;
+  margin-top: -30px;
+  margin-bottom: -1px;
+
+  padding-top: 70px;
+
+}
+
+.h1 {
+  font-family: 'Zen Loop';
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.p {
+  font-family: 'Nanum Gothic';
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  font-family: 'Nanum Gothic';
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: white;
+}
+
+.price {
+  font-family: 'Zen Loop';
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  font-family: 'Zen Loop', sans-serif;
+  font-size: 1.8rem;
+  padding: 0.75rem 2rem;
+  border: 1px solid #829B97;
+  border-radius: 30px 0px 30px 0px;
+  background-color: #829B97;
+  color: white;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2A4F57;
+  border-color: #2A4F57;
+}
+ */
