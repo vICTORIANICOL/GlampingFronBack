@@ -2,14 +2,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import './styles/global.css';
+import "./styles/global.css";
 import { BrowserRouter } from "react-router-dom";
+import { AuthProvider } from "./context/AuthContext.jsx";
 
-document.body.style.backgroundColor = "lightgrey"; 
+document.body.style.backgroundColor = "lightgrey";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  
   <BrowserRouter>
-    <App />
+    <AuthProvider>
+      <App />
+    </AuthProvider>
   </BrowserRouter>
 );

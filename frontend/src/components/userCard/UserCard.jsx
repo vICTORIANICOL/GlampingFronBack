@@ -1,8 +1,8 @@
+import { useAuthContext } from "../../context/AuthContext";
 import styles from "./userCard.module.css";
-import useAuth from "../../hooks/useAuth";
 
 export default function UserCard() {
-  const { user, signedIn, signOut } = useAuth();
+  const { user, signedIn, signOut } = useAuthContext();
 
   if (!signedIn) return null;
 

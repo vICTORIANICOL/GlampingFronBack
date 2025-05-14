@@ -12,6 +12,9 @@ import Login from "./pages/Login"; // Login route
 import StayDetailPage from "./components/staydetailpage/StayDetailPage";
 import ScrollToTop from "./components/ScrollToTop";
 import UserCard from "./components/userCard/UserCard";
+import ProtectedRoute from "./components/routes/ProtectedRoute";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Import the CSS for Toastify
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,20 +26,28 @@ export default function App() {
     { path: "/activitypage", element: <ActivityPage /> },
     { path: "/:stayName", element: <StayDetailPage /> },
     { path: "/minliste", element: <MinListe /> }, // Fixed route: "/minliste"
-    { path: "/backoffice", element: <Backoffice /> }, // Backoffice route
+    {
+      path: "/backoffice",
+      element: (
+        <ProtectedRoute requiredRole="admin">
+          <Backoffice />
+        </ProtectedRoute>
+      ),
+    }, // Backoffice route
     { path: "/login", element: <Login /> }, // Login route
   ]);
 
   return (
-    <>
-      <div className="app">
-        <UserCard />
-        <ScrollToTop />
-        <Nav isOpen={menuOpen} setIsOpen={setMenuOpen} />
-        <main className="content">{routes}</main>
+    <div className="app">
+      <UserCard />
+      <ScrollToTop />
+      <Nav isOpen={menuOpen} setIsOpen={setMenuOpen} />
+      <main className="content">{routes}</main>
 
-        <Footer />
-      </div>
-    </>
+      <Footer />
+
+      {/* ToastContainer for toast notifications */}
+      <ToastContainer position="bottom-right" autoClose={4000} />
+    </div>
   );
 }
