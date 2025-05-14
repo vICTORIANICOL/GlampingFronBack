@@ -11,6 +11,7 @@ import Backoffice from "./pages/Backoffice"; // Backoffice route
 import Login from "./pages/Login"; // Login route
 import StayDetailPage from "./components/staydetailpage/StayDetailPage";
 import ScrollToTop from "./components/ScrollToTop";
+import UserCard from "./components/userCard/UserCard";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,10 +29,14 @@ export default function App() {
 
   return (
     <>
-      <ScrollToTop />
-      <Nav isOpen={menuOpen} setIsOpen={setMenuOpen} />
-      <main>{routes}</main>
-      <Footer />
+      <div className="app">
+        <UserCard />
+        <ScrollToTop />
+        <Nav isOpen={menuOpen} setIsOpen={setMenuOpen} />
+        <main className="content">{routes}</main>
+
+        <Footer />
+      </div>
     </>
   );
 }
