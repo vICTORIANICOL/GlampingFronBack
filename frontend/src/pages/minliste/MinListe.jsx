@@ -3,6 +3,7 @@ import Header from "../../components/header/Header";
 import ActivityCard from "../../components/activity/ActivityCard"; // Import ActivityCard component
 import styles from "./minListe.module.css";
 import Sec1 from "../../components/sec1/Sec1";
+import Swal from "sweetalert2";
 
 export default function MinListe() {
   const [favorites, setFavorites] = useState([]);
@@ -22,6 +23,29 @@ export default function MinListe() {
     );
     setFavorites(updatedFavorites);
     localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+  };
+
+  const handleDelete = async (productId) => {
+    try {
+      const result = await Swal.fire({
+        title: "Er du sikker?",
+        text: "Du er ved at fjerne dette produkt fra din liste.",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#d33",
+        cancelButtonColor: "#3085d6",
+        confirmButtonText: "Ja, fjern",
+        cancelButtonText: "Annullér",
+      });
+
+      if (result.isConfirmed) {
+        removeFavorite(productId); // Call your actual remove function
+        await Swal.fire("Fjernet!", "Produktet er blevet fjernet.", "success");
+      }
+    } catch (error) {
+      console.error("Fejl ved fjernelse:", error);
+      Swal.fire("Fejl!", "Noget gik galt under fjernelse.", "error");
+    }
   };
 
   // Handle expand/collapse of description
@@ -52,7 +76,7 @@ export default function MinListe() {
                 <ActivityCard
                   activity={activity}
                   isFavorite={true} // Since it's already in favorites, it’s always a favorite
-                  onHeartClick={removeFavorite} // Pass removeFavorite function
+                  onHeartClick={handleDelete} // Pass removeFavorite function
                   expanded={expanded[activity.title]} // Pass expanded state
                   onExpandClick={toggleExpand} // Pass toggleExpand function
                 />

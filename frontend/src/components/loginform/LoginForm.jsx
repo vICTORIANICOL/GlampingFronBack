@@ -2,8 +2,9 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { loginSchema } from "../validationSchema";
 import UseAuth from "../hooks/useAuth";
-import { toast } from "react-toastify"; //
+import { toast } from "react-toastify";
 import styles from "./loginForm.module.css";
+import { ClipLoader } from "react-spinners";
 
 const LoginForm = () => {
   const { signIn, isLoading, error } = UseAuth();
@@ -16,7 +17,6 @@ const LoginForm = () => {
     resolver: yupResolver(loginSchema),
   });
 
-  // ✅ Updated onSubmit with toast messages
   const onSubmit = async (data) => {
     try {
       const result = await signIn(data.email, data.password);
@@ -49,6 +49,13 @@ const LoginForm = () => {
           {isLoading ? "Signing in..." : "Sign In"}
         </button>
       </form>
+
+      {/* ✅ Show spinner below the form when loading */}
+      {isLoading && (
+        <div style={{ marginTop: "1rem", textAlign: "center" }}>
+          <ClipLoader color="#36d7b7" size={40} />
+        </div>
+      )}
     </div>
   );
 };
